@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = ESeries
+CurrentModule = ESeriesRounding
 ```
 
-# ESeries
+# ESeriesRounding
 
-Documentation for [ESeries](https://github.com/KronosTheLate/ESeries.jl).
+Documentation for [ESeriesRounding](https://github.com/KronosTheLate/ESeriesRounding.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [ESeries]
+Modules = [ESeriesRounding]
 ```

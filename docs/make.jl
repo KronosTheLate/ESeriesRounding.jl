@@ -1,16 +1,16 @@
-using ESeries
+using ESeriesRounding
 using Documenter
 
-DocMeta.setdocmeta!(ESeries, :DocTestSetup, :(using ESeries); recursive=true)
+DocMeta.setdocmeta!(ESeriesRounding, :DocTestSetup, :(using ESeriesRounding); recursive=true)
 
 makedocs(;
-    modules=[ESeries],
+    modules=[ESeriesRounding],
     authors="KronosTheLate",
-    repo="https://github.com/KronosTheLate/ESeries.jl/blob/{commit}{path}#{line}",
-    sitename="ESeries.jl",
+    repo="https://github.com/KronosTheLate/ESeriesRounding.jl/blob/{commit}{path}#{line}",
+    sitename="ESeriesRounding.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://KronosTheLate.github.io/ESeries.jl",
+        canonical="https://KronosTheLate.github.io/ESeriesRounding.jl",
         assets=String[],
     ),
     pages=[
@@ -19,5 +19,5 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/KronosTheLate/ESeries.jl",
+    repo="github.com/KronosTheLate/ESeriesRounding.jl",
 )

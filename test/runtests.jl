@@ -1,6 +1,6 @@
-using ESeries
+using ESeriesRounding
 using Test
 
-@testset "ESeries.jl" begin
+@testset "ESeriesRounding.jl" begin
     # Write your tests here.
 end

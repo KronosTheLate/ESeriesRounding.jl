@@ -24,9 +24,9 @@ git-tree-sha1 = "350dced36c11f794c6c4da5dc6493ec894e50c16"
 uuid = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 version = "0.27.5"
 
-[[ESeries]]
+[[ESeriesRounding]]
 path = ".."
-uuid = "742515c8-9064-4751-978d-896c2803d696"
+uuid = "7b398af1-3c03-4c36-a68d-b29057ec0a45"
 version = "0.1.0"
 
 [[IOCapture]]
