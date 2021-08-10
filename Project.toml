@@ -1,0 +1,17 @@
+name = "ESeries"
+uuid = "742515c8-9064-4751-978d-896c2803d696"
+authors = ["KronosTheLate"]
+version = "0.1.0"
+
+[deps]
+AbstractCircuitComponentRounding = "f69727b9-8a39-40e5-8e7a-0243a3421727"
+NumericIO = "6c575b1c-77cb-5640-a5dc-a54116c90507"
+
+[compat]
+julia = "1.6"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
