@@ -31,7 +31,7 @@ function round(series::ESeries, input::Number, format::Union{Symbol, Bool}=false
     geom_mean = geometric_mean(candidate1, candidate2)
     @assert (candidate1 ≤ input_normed ≤ candidate2) "Input value not in the range of rounding candidates. Something has gone wrong"
 
-    result = (candidate1 ≥ geom_mean ? candidate1  :  candidate2)
+    result = (input_normed ≥ geom_mean ? candidate2  :  candidate1)
     result = result*10^OOM
 
     if format == false
@@ -42,9 +42,9 @@ function round(series::ESeries, input::Number, format::Union{Symbol, Bool}=false
 end
 
 function round(series::ESeries, inputs::AbstractArray, format::Union{Symbol, Bool}=false)
-    outputs = Any[]
-    for i in eachindex(inputs)
-        push!(outputs, round(series, inputs[i], format))
+    outputs = Array{Any}(undef, length(inputs))
+    for i in eachindex(outputs)
+        outputs[i] = round(series, inputs[i], format)
     end
     return outputs
 end
