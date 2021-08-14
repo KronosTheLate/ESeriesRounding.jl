@@ -1,7 +1,7 @@
 name = "ESeriesRounding"
 uuid = "7b398af1-3c03-4c36-a68d-b29057ec0a45"
 authors = ["KronosTheLate"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 AbstractCircuitComponentRounding = "f69727b9-8a39-40e5-8e7a-0243a3421727"
