@@ -1,10 +1,5 @@
 # This file is machine-generated - editing it directly is not advised
 
-[[AbstractCircuitComponentRounding]]
-git-tree-sha1 = "04e7a89abe1515ed87278e1d1cc13d35796f386e"
-uuid = "f69727b9-8a39-40e5-8e7a-0243a3421727"
-version = "0.1.0"
-
 [[NumericIO]]
 deps = ["Printf"]
 git-tree-sha1 = "5e2bd9bee8b55b754ca61386df207abbfc266ef6"
