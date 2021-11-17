@@ -4,11 +4,10 @@ export E3, E6, E12, E24, E48, E96, E192
 export determine_E
 
 import Base: round, print, show
-
 using NumericIO: formatted
-using AbstractCircuitComponentRounding: AbstractPrefNumbSys, geometric_mean, find_under_and_over, norm_to_between_100_and_1000
+include("UtilityFunctions.jl")
 
-struct ESeries<:AbstractPrefNumbSys
+struct ESeries
     name::Symbol
     vals::AbstractVector
 end
@@ -42,11 +41,7 @@ function round(series::ESeries, input::Number, format::Union{Symbol, Bool}=false
 end
 
 function round(series::ESeries, inputs::AbstractArray, format::Union{Symbol, Bool}=false)
-    outputs = Array{Any}(undef, length(inputs))
-    for i in eachindex(outputs)
-        outputs[i] = round(series, inputs[i], format)
-    end
-    return outputs
+    return [round(series, inputs[i], format) for i in eachindex(inputs)]
 end
 
 function print(series::ESeries)
