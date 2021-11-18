@@ -6,7 +6,7 @@
 [![Coverage](https://codecov.io/gh/KronosTheLate/ESeriesRounding.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/KronosTheLate/ESeriesRounding.jl)--->
 
 ## Introduction
-This package implements functions to round given values to the nearest standardized value for circuit components. The only set of standardized values currently implemented is the E-series. From [wikipedia](https://en.wikipedia.org/wiki/E_series_of_preferred_numbers):  
+This package implements functions to round given values to the nearest E-series value. From [wikipedia](https://en.wikipedia.org/wiki/E_series_of_preferred_numbers):  
 "The E series is a system of preferred numbers (also called preferred values) derived for use in electronic components. It consists of the E3, E6, E12, E24, E48, E96 and E192 series, where the number after the 'E' designates the quantity of value "steps" in each series. Although it is theoretically possible to produce components of any value, in practice the need for inventory simplification has led the industry to settle on the E series for resistors, capacitors, inductors, and zener diodes."
 
 ## The use case
