@@ -100,6 +100,8 @@ function determine_E(inputs::Number...)
         end
     end
     possible_series = getfield.(candidates[myfilt], :name)
+    #println("E-series containing all inputs:")
+    #println.(possible_series)
     return possible_series
 end
 
