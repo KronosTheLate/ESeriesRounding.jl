@@ -41,7 +41,7 @@ function round(series::ESeries, input::Number, format::Union{Symbol, Bool}=false
 end
 
 function round(series::ESeries, inputs::AbstractArray, format::Union{Symbol, Bool}=false)
-    return [round(series, inputs[i], format) for i in eachindex(inputs)]
+    return [round(series, inputs[i], format) for i in eachindex(inputs)]  .|> identity   # identity call constrains the type
 end
 
 function print(series::ESeries)
