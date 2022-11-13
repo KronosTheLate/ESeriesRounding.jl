@@ -79,7 +79,7 @@ julia> E3.vals
 ```
 
 ## But what series should I round to?
-To determine what series is available to you, you can do two thing:
+To determine what series is available to you, you can do two things:
 1) Manually check for matches between the available components and a list of E-series values. To see all values in a given series, see the paragraph above.
 2) Use the function `determine_E`.
 
